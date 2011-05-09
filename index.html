@@ -479,11 +479,15 @@
 		
 		
 		<div class="entry">
-			<h2>Loop Performance - Cache Array Length</h2>
+			<h2>Loop Performance - Cache Array Length When The Array Is Large</h2>
 			
 			<p>
 				Looping is arguably the most important part of JavaScript performance to get right. Shave a millisecond or two off inside of a loop, potentially gain seconds overall. One such way is to cache the length of an array so it doesnt have to be calculated every time the loop is iterated through.
 			</p>
+
+                        <p>
+                                Note that this only really matters for arrays where the number of elements is over a couple hundred. Also, using a library like <a href="http://documentcloud.github.com/underscore/">underscore.js</a> to iterate through array elements means you don't have to worry about this problem at all.
+                        </p>
 			
 			<script type="syntaxhighlighter" class="brush: js;  toolbar: false; gutter: false;"><![CDATA[
 				var toLoop = ["1000 items"];
