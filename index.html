@@ -350,23 +350,23 @@
 		
 		
 		<div class="entry">
-			<h2>Avoid Comparing to true and false</h2>
+			<h2>Compare to true and false if it enhances readability</h2>
 			
 			<p>
-				Direct comparison to the values of true and false is unnecessary. Sometimes it might be good for clarity, but it's just extra code.
+				Direct comparison to the values of true and false is unnecessary, but sometimes it might be good for clarity. Always prefer clarity.
 			</p>
 			
 			<script type="syntaxhighlighter" class="brush: js;  toolbar: false; gutter: false;"><![CDATA[
 				if (foo === true) {
-					// good that they're using triple equals, bad as it's ambiguous
+					// ok if you feel the situation merits it
 				}
 				
 				if (foo) {
-					// yay!
+					// also ok
 				}
 				
 				if (!bar) {
-					// the opposite
+					// the opposite - also ok
 				}
 			]]></script>
 			
