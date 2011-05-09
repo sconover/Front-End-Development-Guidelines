@@ -436,15 +436,15 @@
 		
 		
 		<div class="entry">
-			<h2>Camel Case Variables</h2>
+			<h2>Use All Caps For Constants</h2>
 			
 			<p>
 				Shouldn't have to explain this one:
 			</p>
 			
 			<script type="syntaxhighlighter" class="brush: js;  toolbar: false; gutter: false;"><![CDATA[
-				var MOUSE_TIMEOUT = 30; // bad
-				var mouseTimeout = 30; // good :)
+				var MOUSE_TIMEOUT = 30; // good: obviously a constant
+				var mouseTimeout = 30; // bad: doesn't look like a constant, lower camel form implies mutability.
 			]]></script>
 		</div>
 		
